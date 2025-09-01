@@ -40,3 +40,9 @@ Este proyecto implementa una arquitectura distribuida basada en microservicios u
 
 ```bash
 docker-compose up --build
+
+---
+👨‍💻 Autor: Freyder Otálvaro  
+Senior Java Developer | Arquitecto Backend | AWS Learner  
+GitHub: [@freyderdev](https://github.com/freyderdev)
+
