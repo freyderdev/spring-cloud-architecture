@@ -1,0 +1,109 @@
+resilience4j:
+  circuitbreaker:
+    configs:
+        default:
+            slidingWindowSize: 6 #esta es la ventana programatica que es de 6 request
+            failureRateThreshold: 50
+            waitDurationInOpenState: 20s
+            permittedNumberOfCallsInHalfOpenState: 3
+            slow-call-duration-threshold: 3s
+            slow-call-rate-threshold: 50
+    instances:
+      products:
+        baseConfig: default 
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 3s
+    instances:
+      products:
+        baseConfig: default
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # issuer-uri: http://127.0.0.1:9100
+          # configuracion para Docker:
+          issuer-uri: ${IP_ADDR:http://127.0.0.1:9100}
+      client:
+        registration:
+          client-app:
+            provider: spring
+            client-id: gateway-app
+            client-secret: 12345
+            authorization-grant-type: authorization_code 
+            redirect-uri: http://127.0.0.1:8090/authorized
+            scope:
+            - openid
+            - profile
+            client-name: client-app
+        provider:
+          spring:
+            # issuer-uri: http://127.0.0.1:9100
+            # configuracion para Docker:
+            issuer-uri: ${IP_ADDR:http://127.0.0.1:9100}
+
+  cloud:
+    gateway:
+     mvc:
+      routes:
+      - id: msvc-oauth
+        uri: lb://msvc-oauth
+        predicates:
+        - Path=/api/security/**
+        filters:
+        - StripPrefix=2
+      - id: msvc-users
+        uri: lb://msvc-users
+        predicates:
+        - Path=/api/users/**
+        filters:
+        - StripPrefix=2
+
+      # - id: msvc-products
+      #   uri: lb://msvc-products
+      #   predicates:
+      #   - Path=/api/products/**
+        # - Header=token, 12345
+        # - Method=GET, POST
+        # - Query=color
+        # - Cookie=color, azul
+        # - Header=Content-Type, application/json
+        # filters:
+        # - StripPrefix=2
+        # - name: CircuitBreaker
+        #   args:
+        #     name: products
+        #     statusCodes: 500
+        #     fallbackUri: forward:/api/items/5
+        # - CircuitBreaker=products
+        # version: 1.0.0
+        # - name: SampleCookie
+        #   args:
+        #     message: Hola mi mensaje personalizado para productos!
+        #     name: user
+        #     value: Freyder
+        # version: 2.0.0
+        # - SampleCookie=Hola mi mensaje personalizado para productos!, user, Freyder
+        # version: 3.0.0
+        # si se le quiere dar un nombre distinto al nombre de la clase:
+        # - EjemploCookie=Hola mi mensaje personalizado para productos!, user, Freyder
+
+      - id: msvc-items
+        uri: lb://msvc-items
+        predicates:
+        - Path=/api/items/**
+        filters:
+        - StripPrefix=2
+        # para agregar una cabecera Header cualquiera, ya sea un token, contentype, cookie, etc
+        # en el request "AddRequestHeader"
+        - AddRequestHeader=token-request, violetta
+        # Una cabecera para la respuesta: "AddResponseHeader"
+        - AddResponseHeader=token-response, 1321465 
+        # agregar un parametro al request: "AddRequestParameter"
+        - AddRequestParameter=name, Freyder
+        - SetResponseHeader=Content-Type, text/plain
+        
+

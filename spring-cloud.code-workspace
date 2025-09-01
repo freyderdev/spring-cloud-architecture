@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"path": "eureka-server"
+		},
+		{
+			"path": "msvc-products"
+		},
+		{
+			"path": "msvc-items"
+		},
+		{
+			"name": "msvc-gateway-server",
+			"path": "msvc-gateway-server"
+		},
+		{
+			"name": "config-server",
+			"path": "config-server"
+		},
+		{
+			"path": "config"
+		},
+		{
+			"name": "libs-msvc-commons",
+			"path": "libs-msvc-commons"
+		},
+		{
+			"name": "msvc-users",
+			"path": "msvc-users"
+		},
+		{
+			"name": "msvc-oauth",
+			"path": "msvc-oauth"
+		},
+		{
+			"path": "zipkin"
+		},
+		{
+			"path": "docker-compose"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

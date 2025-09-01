@@ -1,0 +1,22 @@
+resilience4j:
+  circuitbreaker:
+    configs:
+        default:
+            slidingWindowSize: 6 #esta es la ventana programatica que es de 6 request
+            failureRateThreshold: 50
+            waitDurationInOpenState: 20s
+            permittedNumberOfCallsInHalfOpenState: 3
+            slow-call-duration-threshold: 3s
+            slow-call-rate-threshold: 50
+    instances:
+      items:
+        baseConfig: default 
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 4s
+    instances:
+      items:
+        baseConfig: default
+
+      
