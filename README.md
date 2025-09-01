@@ -46,3 +46,7 @@ docker-compose up --build
 Senior Java Developer | Arquitecto Backend | AWS Learner  
 GitHub: [@freyderdev](https://github.com/freyderdev)
 
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.1-green)
+![Docker](https://img.shields.io/badge/Docker-ready-blue)
+
