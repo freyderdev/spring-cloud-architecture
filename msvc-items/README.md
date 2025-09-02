@@ -86,6 +86,17 @@ docker run -p 8005:8005 msvc-items
 ```
 Nota: Ajusta la variable config.baseurl.endpoint.msvc-products en application.yml o Config Server según la URL del microservicio msvc-products.
 
+---
+🔧 Dependencias clave
+	• Spring Boot Starter Web & WebFlux
+	• Spring Cloud OpenFeign
+	• Spring Cloud Circuit Breaker Resilience4J
+	• Spring Cloud LoadBalancer
+	• Micrometer Tracing & Zipkin
+  • libs-msvc-commons (entidades compartidas)
+  ---
+
+
 
 
 
