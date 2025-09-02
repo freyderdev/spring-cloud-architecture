@@ -81,9 +81,10 @@ docker build -t msvc-items .
 ```bash
 docker run -p 8005:8005 msvc-items
 ```
----
 Note: Adjust the variable config.baseurl.endpoint.msvc-products in application.yml or Config Server according to the URL of the msvc-products microservice.
+
 ---
+
 ## 🔧 Key Dependencies
 - Spring Boot Starter Web & WebFlux
 - Spring Cloud OpenFeign
