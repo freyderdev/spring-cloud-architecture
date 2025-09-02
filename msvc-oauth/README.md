@@ -30,12 +30,13 @@ It handles authentication, token issuance, and user validation via remote servic
 
 ---
 
-## 🧩 Domain Models
+## 🧪 How to Run
 
 ### `Role.java`
-Represents a user role for authorization.
-
-```java
-Fields:
-- id: Unique identifier
-- name: Role name (e.g., ROLE_USER, ROLE_ADMIN)
+```bash
+mvn clean package
+docker build -t msvc-oauth .
+docker run -p 8001:8001 msvc-oauth
+```
+## 👨‍💻 Author
+Freyder Otalvaro Senior Java Developer | AWS Learner GitHub
