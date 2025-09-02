@@ -52,6 +52,7 @@ public class Product {
     private LocalDate createAt;
 }
 
+---
 ## 🐳 Docker
 Construir la imagen del microservicio:
 mvn clean package -DskipTests
@@ -60,11 +61,14 @@ docker build -t msvc-products .
 Ejecutar el contenedor:
 docker run -p 8001:8001 msvc-products
 
+---
+
 🔗 Integraciones:
 - Eureka Server: registro y descubrimiento de instancias
 - Gateway Server: seguridad y entrada unificada al sistema
 - Commons Library (libs-msvc-commons): reutilización de la entidad Product
 - Zipkin: trazabilidad distribuida de peticiones
+---
 
 👨‍💻 Autor
 Freyder Otálvaro Senior Java Developer | Backend Architect | AWS Learner GitHub: @freyderdev
