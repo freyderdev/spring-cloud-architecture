@@ -1,4 +1,4 @@
-# 🧩 Items Microservice - Products Client
+# 🧩 Items Microservice 
 
 This microservice `msvc-items` is a client that communicates with the **msvc-products** microservice.  
 It is built with **Spring Boot 3**, **Spring Cloud**, and uses **WebClient** and **Feign Client** for inter-service communication.  
