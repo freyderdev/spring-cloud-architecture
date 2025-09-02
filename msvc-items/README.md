@@ -88,7 +88,7 @@ Nota: Ajusta la variable config.baseurl.endpoint.msvc-products en application.ym
 
 ---
 
-##🔧 Dependencias clave
+## 🔧 Dependencias clave
 - Spring Boot Starter Web & WebFlux
 - Spring Cloud OpenFeign
 - Spring Cloud Circuit Breaker Resilience4J
