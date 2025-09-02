@@ -32,7 +32,6 @@ It handles authentication, token issuance, and user validation via remote servic
 
 ## 🧪 How to Run
 
-### `Role.java`
 ```bash
 mvn clean package
 docker build -t msvc-oauth .
