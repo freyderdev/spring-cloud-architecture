@@ -43,17 +43,17 @@ docker-compose up --build
 
 ## 📚 Documentación por microservicio
 
-- [`msvc-products`](./msvc-products/README.md) – Gestión de productos
-- [`msvc-users`](./msvc-users/README.md) – Gestión de usuarios
-- [`msvc-oauth`](./msvc-oauth/README.md) – Servicio de autenticación
-- [`msvc-gateway-server`](./msvc-gateway-server/README.md) – Puerta de enlace y seguridad
-- [`config-server`](./config-server/README.md) – Configuración centralizada
-- [`eureka-server`](./eureka-server/README.md) – Registro de servicios
-- [`zipkin`](./zipkin/README.md) – Trazabilidad distribuida
+```markdown
+- 📦 [`msvc-products`](./msvc-products/README.md) – Gestión de productos
+- 👥 [`msvc-users`](./msvc-users/README.md) – Gestión de usuarios
+- 🔐 [`msvc-oauth`](./msvc-oauth/README.md) – Servicio de autenticación
+- 🚪 [`msvc-gateway-server`](./msvc-gateway-server/README.md) – Puerta de enlace y seguridad
+- ⚙️ [`config-server`](./config-server/README.md) – Configuración centralizada
+- 📡 [`eureka-server`](./eureka-server/README.md) – Registro de servicios
+- 🔍 [`zipkin`](./zipkin/README.md) – Trazabilidad distribuida
 
 
 
----
 👨‍💻 Autor: Freyder Otálvaro  
 Senior Java Developer | Arquitecto Backend | AWS Learner  
 GitHub: [@freyderdev](https://github.com/freyderdev)
