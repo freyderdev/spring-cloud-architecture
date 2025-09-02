@@ -89,12 +89,12 @@ Nota: Ajusta la variable config.baseurl.endpoint.msvc-products en application.ym
 ---
 
 ##🔧 Dependencias clave
-	• Spring Boot Starter Web & WebFlux
-	• Spring Cloud OpenFeign
-	• Spring Cloud Circuit Breaker Resilience4J
-	• Spring Cloud LoadBalancer
-	• Micrometer Tracing & Zipkin
-    • libs-msvc-commons (entidades compartidas)
+- Spring Boot Starter Web & WebFlux
+- Spring Cloud OpenFeign
+- Spring Cloud Circuit Breaker Resilience4J
+- Spring Cloud LoadBalancer
+- Micrometer Tracing & Zipkin
+- libs-msvc-commons (entidades compartidas)
 	
   ---
 
