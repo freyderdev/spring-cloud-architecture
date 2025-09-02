@@ -107,19 +107,19 @@ Nota: Ajusta la variable config.baseurl.endpoint.msvc-products en application.ym
 ---
 
 ## 🧪 Ejemplo de uso
-## Listar todos los Items
+### Listar todos los Items
 curl http://localhost:8005/
 
-## Obtener detalle de un Item
+### Obtener detalle de un Item
 curl http://localhost:8005/details2/1
 
-## Crear un producto
+### Crear un producto
 curl -X POST http://localhost:8005/ -H "Content-Type: application/json" -d '{"name":"Camera Canon","price":700.0}'
 
-## Actualizar un producto
+### Actualizar un producto
 curl -X PUT http://localhost:8005/1 -H "Content-Type: application/json" -d '{"name":"Camera Nikon","price":650.0}'
 
-## Eliminar un producto
+### Eliminar un producto
 curl -X DELETE http://localhost:8005/1
 
 ---
