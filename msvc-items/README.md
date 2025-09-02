@@ -98,6 +98,37 @@ Nota: Ajusta la variable config.baseurl.endpoint.msvc-products en application.ym
 	
   ---
 
+## 📌 Observaciones
+
+- Los Items son un wrapper que combina un Producto y una cantidad aleatoria para demostración.
+- Se puede cambiar entre WebClient o Feign Client modificando la inyección del ItemService.
+- Incluye ejemplos de fallback y manejo de errores para resiliencia en llamadas remotas.
+
+---
+
+## 🧪 Ejemplo de uso
+# Listar todos los Items
+curl http://localhost:8005/
+
+# Obtener detalle de un Item
+curl http://localhost:8005/details2/1
+
+# Crear un producto
+curl -X POST http://localhost:8005/ -H "Content-Type: application/json" -d '{"name":"Camera Canon","price":700.0}'
+
+# Actualizar un producto
+curl -X PUT http://localhost:8005/1 -H "Content-Type: application/json" -d '{"name":"Camera Nikon","price":650.0}'
+
+# Eliminar un producto
+curl -X DELETE http://localhost:8005/1
+
+---
+
+## 📦 Docker
+
+- Puerto expuesto: 8005
+- Imagen: msvc-items
+- EntryPoint: java -jar msvc-items.jar
 
 
 
