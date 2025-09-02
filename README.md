@@ -45,6 +45,14 @@ It is designed to demonstrate best practices in backend development, scalability
 
 ---
 
+
+## 👨‍💻 Author
+Freyder Otalvaro
+Senior Java Developer | Arquitecto Backend | AWS Learner  
+[GitHub](https://github.com/freyderdev)  
+Colombia 🇨🇴
+
+
 ## 🧪 How to Run
 
 ```bash
