@@ -106,7 +106,7 @@ Accede al gateway en: http://localhost:8090
 ---
 
 ## 📁 Dependencias (pom.xml)
-###Incluye starters para:
+### Incluye starters para:
 - Spring Cloud Gateway MVC
 - Eureka Client
 - OAuth2 Client y Resource Server
