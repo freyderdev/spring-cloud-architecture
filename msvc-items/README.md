@@ -76,13 +76,14 @@ msvc-items (cliente) --> msvc-products (producto)
 ```bash
   mvn clean package
 ```
-
-3. Construye el proyecto:
+3. Construye la imagen Docker:
+```bash
 docker build -t msvc-items .
-
+```
 4. Ejecuta el contenedor:
+```bash
 docker run -p 8005:8005 msvc-items
-
+```
 Nota: Ajusta la variable config.baseurl.endpoint.msvc-products en application.yml o Config Server según la URL del microservicio msvc-products.
 
 
