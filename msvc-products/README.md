@@ -42,18 +42,7 @@ Este microservicio gestiona el ciclo de vida de los productos en una arquitectur
 
 ---
 
-## 🗄️ Entidad principal
-
-```java
-public class Product {
-    private Long id;
-    private String name;
-    private Double price;
-    private LocalDate createAt;
-}
-
----
-## 🐳 Docker
+# 🐳 Docker
 Construir la imagen del microservicio:
 mvn clean package -DskipTests
 docker build -t msvc-products .
@@ -68,6 +57,7 @@ docker run -p 8001:8001 msvc-products
 - Gateway Server: seguridad y entrada unificada al sistema
 - Commons Library (libs-msvc-commons): reutilización de la entidad Product
 - Zipkin: trazabilidad distribuida de peticiones
+
 ---
 
 👨‍💻 Autor
