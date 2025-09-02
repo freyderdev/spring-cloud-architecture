@@ -14,7 +14,7 @@ It is designed to demonstrate best practices in backend development, scalability
 - **Spring Data JPA**, **Hibernate**, **MySQL 8**  
 - **WebClient**, **Feign**  
 - **Docker**, **Docker Compose**  
-- **AWS EC2** (optional deployment)
+- **AWS**
 
 ---
 
