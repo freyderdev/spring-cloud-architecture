@@ -116,5 +116,3 @@ curl -X DELETE http://localhost:8005/1
 - Image: msvc-items
 - EntryPoint: java -jar msvc-items.jar
 
-
-
