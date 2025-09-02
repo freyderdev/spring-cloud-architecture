@@ -1,10 +1,11 @@
-# 🧠 Arquitectura de Microservicios con Spring Cloud
+# 🧠 Microservices Architecture with Spring Cloud
 
-Este proyecto implementa una arquitectura distribuida basada en microservicios utilizando Spring Boot 3 y Spring Cloud. Está diseñado para demostrar buenas prácticas en desarrollo backend, escalabilidad, seguridad y trazabilidad, integrando múltiples componentes del ecosistema cloud-native.
+This project implements a distributed architecture based on microservices using **Spring Boot 3** and **Spring Cloud**.  
+It is designed to demonstrate best practices in backend development, scalability, security, and traceability, integrating multiple components of the cloud-native ecosystem.
 
 ---
 
-## 🚀 Tecnologías y herramientas
+## 🚀 Technologies and Tools
 
 - **Spring Boot 3**, **Spring Cloud Gateway**, **Eureka Server**  
 - **Spring Cloud Config Server**, **Spring Cloud LoadBalancer**  
@@ -13,38 +14,38 @@ Este proyecto implementa una arquitectura distribuida basada en microservicios u
 - **Spring Data JPA**, **Hibernate**, **MySQL 8**  
 - **WebClient**, **Feign**  
 - **Docker**, **Docker Compose**  
-- **AWS EC2** (despliegue opcional)
+- **AWS EC2** (optional deployment)
 
 ---
 
-## 🧩 Microservicios incluidos
+## 🧩 Included Microservices
 
-- `eureka-server`: Registro y descubrimiento de servicios  
-- `config-server`: Configuración centralizada  
-- `msvc-gateway-server`: Puerta de enlace con seguridad OAuth2  
-- `msvc-products`: Gestión de productos  
-- `msvc-users`: Gestión de usuarios  
-- `msvc-oauth`: Servicio de autenticación  
-- `libs-msvc-commons`: Librerías compartidas  
-- `zipkin`: Trazabilidad distribuida  
-- `docker-compose`: Orquestación de servicios
-
----
-
-## 📦 Características destacadas
-
-- Comunicación entre microservicios vía REST  
-- Balanceo de carga dinámico  
-- Tolerancia a fallos con Resilience4J  
-- Seguridad centralizada en Gateway  
-- Configuración externa y versionada  
-- Trazabilidad distribuida con Zipkin  
-- Contenerización completa con Docker  
-- Listo para despliegue en AWS EC2
+- `eureka-server`: Service registry and discovery  
+- `config-server`: Centralized configuration  
+- `msvc-gateway-server`: API Gateway with OAuth2 security  
+- `msvc-products`: Product management  
+- `msvc-users`: User management  
+- `msvc-oauth`: Authentication service  
+- `libs-msvc-commons`: Shared libraries  
+- `zipkin`: Distributed tracing  
+- `docker-compose`: Service orchestration
 
 ---
 
-## 🧪 Cómo ejecutar
+## 📦 Key Features
+
+- Inter-service communication via REST  
+- Dynamic load balancing  
+- Fault tolerance with Resilience4J  
+- Centralized security at the API Gateway  
+- Externalized and versioned configuration  
+- Distributed tracing with Zipkin  
+- Full containerization with Docker  
+- Ready for deployment on AWS EC2
+
+---
+
+## 🧪 How to Run
 
 ```bash
 docker-compose up --build
