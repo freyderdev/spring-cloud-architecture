@@ -1,4 +1,4 @@
-# 🧠 Microservices Architecture with Spring Cloud
+#  🧠 Spring Cloud Microservices Showcase
 
 This project implements a distributed architecture based on microservices using **Spring Boot 3** and **Spring Cloud**.  
 It is designed to demonstrate best practices in backend development, scalability, security, and traceability, integrating multiple components of the cloud-native ecosystem.
