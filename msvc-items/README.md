@@ -72,6 +72,9 @@ msvc-items (cliente) --> msvc-products (producto)
 
 1. Asegúrate de tener **Docker** y **Maven** instalados.
 2. Construye el proyecto:
+   
+---
+
 ```bash
   mvn clean package
 
@@ -119,11 +122,11 @@ curl -X PUT http://localhost:8005/1 -H "Content-Type: application/json" -d '{"na
 curl -X DELETE http://localhost:8005/1
 
 ---
+
 📦 Docker
 	• Puerto expuesto: 8005
 	• Imagen: msvc-items
 	• EntryPoint: java -jar msvc-items.jar
-
 
 
 
