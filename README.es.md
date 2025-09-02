@@ -50,3 +50,11 @@ Está diseñado para demostrar buenas prácticas en desarrollo backend, escalabi
 
 ```bash
 docker-compose up --build
+
+---
+
+## 👨‍💻 Author
+Freyder Otalvaro
+Senior Java Developer | Arquitecto Backend | AWS Learner  
+[GitHub](https://github.com/freyderdev)  
+Colombia 🇨🇴
