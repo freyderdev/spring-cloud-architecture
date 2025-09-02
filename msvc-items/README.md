@@ -72,8 +72,6 @@ msvc-items (cliente) --> msvc-products (producto)
 
 1. Asegúrate de tener **Docker** y **Maven** instalados.
 2. Construye el proyecto:
-   
----
 
 ```bash
   mvn clean package
@@ -86,7 +84,7 @@ docker run -p 8005:8005 msvc-items
 
 Nota: Ajusta la variable config.baseurl.endpoint.msvc-products en application.yml o Config Server según la URL del microservicio msvc-products.
 
----
+
 
 
 
