@@ -75,6 +75,7 @@ msvc-items (cliente) --> msvc-products (producto)
 
 ```bash
   mvn clean package
+```
 
 3. Construye el proyecto:
 docker build -t msvc-items .
